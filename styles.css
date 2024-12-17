@@ -17,12 +17,19 @@ svg {
 :root {
     --clr-primary: #1992d4;
     --clr-secondary: #efb222;
-    --clr-bg: #e2e8f0;
-    --clr-black: #020202
+    --clr-grey-bg: #e2e8f0;
+    --clr-black: #202020;
 }
 
 body {
     height: 100vh;
+    background-color: var(--clr-black);
+}
+
+.container {
+    height: 100vh;
+    width: 1400px;
+    margin: auto;
     display: grid;
     grid-template-columns: 290px 1fr;
     grid-template-rows: 190px 1fr;
@@ -36,10 +43,11 @@ nav {
 
 header {
     grid-column: 2/6;
+    background-color: white;
 }
 
 main {
-    background-color: var(--clr-bg);
+    background-color: var(--clr-grey-bg);
     grid-column: 2/6;
     grid-row: 2/3;
 }

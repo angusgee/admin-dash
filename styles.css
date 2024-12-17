@@ -19,6 +19,14 @@ svg {
     --clr-secondary: #efb222;
     --clr-grey-bg: #e2e8f0;
     --clr-black: #202020;
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/Inter-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
 }
 
 body {

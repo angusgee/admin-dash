@@ -58,9 +58,16 @@ nav {
 }
 
 .nav-dashboard-logo {
-    font-size: 1.5rem;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
 }
+
+.nav-dashboard-logo h2 {
+    font-size: 1.75rem;
+    margin-left: 0.5rem;
+}
+
 
 .nav-main-list li,
 .nav-secondary-list li {
@@ -146,5 +153,4 @@ main h2 {
     background-color: aquamarine;
     border: 1px solid purple;
     margin: 1rem;
-
 }

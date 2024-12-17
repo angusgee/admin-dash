@@ -18,6 +18,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 :root {
     --clr-primary: #1992d4;
     --clr-secondary: #efb222;
@@ -76,6 +81,13 @@ nav {
 
 .nav-main-list {
     margin-bottom: 2rem;
+}
+
+.nav-main-list a,
+.nav-secondary-list a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 header {

@@ -13,3 +13,33 @@ svg {
     display: block;
     max-width: 100%;
 }
+
+:root {
+    --clr-primary: #1992d4;
+    --clr-secondary: #efb222;
+    --clr-bg: #e2e8f0;
+    --clr-black: #020202
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    grid-template-rows: 190px 1fr;
+}
+
+nav {
+    background-color: var(--clr-primary);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+header {
+    grid-column: 2/6;
+}
+
+main {
+    background-color: var(--clr-bg);
+    grid-column: 2/6;
+    grid-row: 2/3;
+}

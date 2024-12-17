@@ -93,7 +93,7 @@ header {
 
 .heading-container ul {
     display: flex;
-    gap: 2rem;
+    gap: 2remf;
 }
 
 .page-heading {
@@ -112,4 +112,39 @@ main {
     background-color: var(--clr-grey-bg);
     grid-column: 2/6;
     grid-row: 2/3;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+main h2 {
+    font-size: 1.25rem;
+}
+
+.article-container {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-container h2 {
+    position: absolute;
+}
+
+.article-container article {
+    height: 160px;
+    width: 320px;
+    background-color: aqua;
+    border: 1px solid blue;
+    margin: 2rem auto;
+}
+
+.announcements article,
+.trending article {
+    width: 200px;
+    min-height: 250px;
+    background-color: aquamarine;
+    border: 1px solid purple;
+    margin: 1rem;
+
 }

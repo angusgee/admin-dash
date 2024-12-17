@@ -14,11 +14,16 @@ svg {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     --clr-primary: #1992d4;
     --clr-secondary: #efb222;
     --clr-grey-bg: #e2e8f0;
     --clr-black: #202020;
+    --clr-text: white;
     font-family: 'Inter', sans-serif;
 }
 
@@ -36,7 +41,7 @@ body {
 
 .container {
     height: 100vh;
-    width: 1400px;
+    max-width: 1400px;
     margin: auto;
     display: grid;
     grid-template-columns: 290px 1fr;
@@ -47,7 +52,26 @@ nav {
     background-color: var(--clr-primary);
     grid-column: 1/2;
     grid-row: 1/3;
+    color: var(--clr-text);
+    padding: 1.5rem;
+    font-size: 1.25rem;
 }
+
+
+.nav-dashboard-logo {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.nav-main-list li,
+.nav-secondary-list li {
+    padding: 0.75rem;
+}
+
+.nav-main-list {
+    margin-bottom: 2rem;
+}
+
 
 header {
     grid-column: 2/6;

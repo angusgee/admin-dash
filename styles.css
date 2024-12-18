@@ -97,12 +97,18 @@ header {
 
 .search-container {
     display: flex;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     gap: 1rem;
+    align-items: center;
 }
 
 .search-container input {
     margin-right: auto;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    width: 500px;
+    border: none;
+    background-color: var(--clr-grey-bg);
 }
 
 .heading-container {
